@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ramdan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_155sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_150sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView1"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="101dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/fajr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvNextPray1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+
+                                android:text="@string/timeFajr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName1"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName1"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/moon"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray1"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName1"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName1"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView2"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="101dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="@string/sunRise"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvNextPray2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+
+                                android:text="@string/timeSunRise"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName2"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName2"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName2" />
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/sun"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray2"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName2"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName2"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView3"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="101dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/dhuhr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/tvNextPray3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/timeDhuhr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName3"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName3"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName3" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="28dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/sun"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray3"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName3"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName3"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView4"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_101sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="@dimen/_16sdp">
+
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:text="@string/asr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvNextPray4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+
+                                android:text="@string/timeAsr"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName4"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName4"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName4" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_marginStart="@dimen/_21sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:src="@drawable/asr"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray4"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName4"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName4"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView5"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_101sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="@dimen/_16sdp">
+
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/maghrib"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvNextPray5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:text="@string/timeMaghrib"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName5"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName5"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName5" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:src="@drawable/maghrib"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray5"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName5"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName5"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView6"
+                        style="?attr/materialCardViewFilledStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_101sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/color_prayer_design">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardContainer6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/prayer_design"
+                            android:padding="@dimen/_16sdp">
+                            <TextView
+                                android:id="@+id/tvNearestScheduleName6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:text="@string/isha"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/tvNextPray6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:text="@string/timeIsha"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName6"
+                                app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName6"
+                                app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName6" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:src="@drawable/moon"
+                                app:layout_constraintBottom_toTopOf="@id/tvNextPray6"
+                                app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName6"
+                                app:layout_constraintTop_toTopOf="@id/tvNearestScheduleName6"
+                                app:layout_constraintVertical_bias="0.26" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:src="@drawable/welcome"
+                    android:layout_gravity="center"
+                    android:id="@+id/img"
+                    />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>

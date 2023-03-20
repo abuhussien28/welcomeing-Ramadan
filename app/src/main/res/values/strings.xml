@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Welcoming Ramadan</string>
+    <!-- string uses in app -->
+    <string name="fajr">Fajr</string>
+    <string name="timeFajr">4:30 AM</string>
+    <string name="status">Off</string>
+    <string name="sunRise">sun rise</string>
+    <string name="timeSunRise">5:57 AM</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="timeDhuhr">12:02 PM</string>
+    <string name="asr">Asr</string>
+    <string name="timeAsr">3:30 PM</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="timeMaghrib">6:08 PM</string>
+    <string name="isha">Isha</string>
+    <string name="timeIsha">7:26 PM</string>
+</resources>
