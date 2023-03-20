@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_155sdp"
+        android:layout_marginTop="@dimen/_160sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -300,7 +300,7 @@
                                 android:id="@+id/tvNearestScheduleName5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
+                                android:layout_marginTop="@dimen/_15sdp"
                                 android:text="@string/maghrib"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="@color/white"
@@ -313,7 +313,7 @@
                                 android:id="@+id/tvNextPray5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginTop="@dimen/_17sdp"
                                 android:text="@string/timeMaghrib"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="@color/white"
@@ -375,11 +375,11 @@
                                 app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName6"
                                 app:layout_constraintStart_toStartOf="@id/tvNearestScheduleName6"
                                 app:layout_constraintTop_toBottomOf="@id/tvNearestScheduleName6" />
-
                             <ImageView
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
-                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_22sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
                                 android:src="@drawable/moon"
                                 app:layout_constraintBottom_toTopOf="@id/tvNextPray6"
                                 app:layout_constraintStart_toEndOf="@id/tvNearestScheduleName6"
@@ -393,6 +393,7 @@
                     android:layout_height="@dimen/_150sdp"
                     android:src="@drawable/welcome"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
                     android:id="@+id/img"
                     />
             </LinearLayout>
